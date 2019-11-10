@@ -2,6 +2,9 @@ pipeline {
     agent any
 
     stages {
+        stage('Init'){
+            echo 'Initializing the pipeline...'
+        }
         stage('Build') {
             steps {
                 echo 'Building..'
