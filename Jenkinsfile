@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     stages {
-        stages('Init'){
-            steps{
+        stage('Init'){
+            steps {
                 echo 'Initializing the pipeline...'
             }
             
