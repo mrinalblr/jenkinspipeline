@@ -23,11 +23,6 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        stage('PostDeploy'){
-            steps{
-                echo 'Post deploy testing ....'
-                echo 'Completed.'
-            }
-        }
+        
     }
 }
