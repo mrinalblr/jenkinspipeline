@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+        stage('Init'){
+            steps {
+                echo 'Initializing the pipeline...'
+            }
+            
+        }
         stage('Build') {
             steps {
                 echo 'Building..'
@@ -15,6 +21,12 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+            }
+        }
+        stage('PostDeploy'){
+            steps{
+                echo 'Post deploy testing ....'
+                echo 'Completed.'
             }
         }
     }
